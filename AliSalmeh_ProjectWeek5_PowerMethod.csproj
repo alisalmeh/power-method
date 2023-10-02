@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>AliSalmeh_ProjectWeek5.Power_Refactor</RootNamespace>
+    <RootNamespace>AliSalmeh_ProjectWeek5_PowerMethod</RootNamespace>
   </PropertyGroup>
 
 </Project>

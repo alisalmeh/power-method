@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AliSalmeh_ProjectWeek5.Power_Refactor
+namespace AliSalmeh_ProjectWeek5_PowerMethod
 {
     class Program
     {
