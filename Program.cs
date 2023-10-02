@@ -6,28 +6,39 @@ namespace AliSalmeh_ProjectWeek5.Power_Refactor
     {
         static void Main(string[] args)
         {
-            //PowerMethod
+            // Power Method
 
             Console.WriteLine("Enter base number: ");
-            double myBaseNumber = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter power number: ");
-            double myPowerNumber = Convert.ToDouble(Console.ReadLine());
+            double baseNumber = GetUserInput();
 
-            var myResult = Power(myBaseNumber, myPowerNumber);
-            Console.WriteLine($"The result is: {myResult}");
+            Console.WriteLine("Enter power number: ");
+            double powerNumber = GetUserInput();
+
+            var result = Power(baseNumber, powerNumber);
+            Console.WriteLine($"The result is: {result}");
+        }
+
+        static double GetUserInput()
+        {
+            return Convert.ToDouble(Console.ReadLine());
         }
 
         static double Power(double baseNum, double powerNum)
         {
             double result = 1;
-            if (powerNum > 0)
+
+            if (powerNum == 0)
+            {
+                return 1;
+            }
+            else if (powerNum > 0)
             {
                 for (int i = 1; i <= powerNum; ++i)
                 {
                     result *= baseNum;
                 }
             }
-            else if (powerNum < 0)
+            else
             {
                 for (int i = -1; i >= powerNum; --i)
                 {
